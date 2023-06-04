@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h2 style="text-align: center;">Lista</h2>
+<hr>
+<ol>
+    {% for item in list%}
+    <li>{{item}}</li>
+    {% endfor %}
+    <form action="{{url_for('principal')}}" method="POST">
+        <label>Item</label>
+        <input type="text" name="item">
+        <button>Adicionar</button>
+    </form>
+</ol>
+{% endblock conteudo %}
