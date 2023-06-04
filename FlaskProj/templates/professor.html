@@ -8,13 +8,19 @@
     <p>{{registro.nota}}</p>
 </details>
 {% endfor %}
-<form action="{{url_for('notas')}}" method="POST" style="text-align: center;">
-    <label>Aluno</label>
-    <input type="text" name="aluno">
+<form action="{{url_for('notas')}}" method="POST">
+    <div class="form-group">
+        <label>Aluno</label>
+        <input class="form-control" type="text" name="aluno">
+    </div>
+
     <br>
-    <label>Nota</label>
-    <input type="text" name="nota">
+    <div class="form-group">
+        <label>Nota</label>
+        <input class="form-control" type="text" name="nota">
+    </div>
+
     <br>
-    <button>Adicionar</button>
+    <button class="btn btn-primary">Adicionar</button>
 </form>
 {% endblock conteudo %}
