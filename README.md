@@ -1,2 +1,2 @@
 # estudoFlask
-mini projetinhos bem simples pra estudar sobre flask
+mini projetinho pra estudar flask
